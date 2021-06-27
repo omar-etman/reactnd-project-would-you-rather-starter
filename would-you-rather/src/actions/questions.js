@@ -27,7 +27,7 @@ export function handleAddQuestion(optionOneText, optionTwoText) {
   };
 }
 
-export function receiveQuestions(questions) {
+export function recieveQuestions(questions) {
   return {
     type: RECIEVE_QUESTIONS,
     questions,
