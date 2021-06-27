@@ -1,0 +1,325 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #252525;
+}
+
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.btn-group {
+  width: 100%;
+  max-width: 180px;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+
+.btn-group button {
+  text-transform: uppercase;
+  margin: 0px auto;
+  padding: 4px;
+  border: 1px solid rgba(0,0,0,.29);
+  cursor: pointer;
+  background: #fff;
+  font-size: 10px;
+  width: 90px;
+  position: relative;
+  outline: 0;
+}
+
+.btn-group .active {
+  background: #eee;
+}
+
+.btn-group button:hover {
+  text-decoration: none;
+  background: #ccc;
+}
+
+.btn-group .btn-lft {
+  border-right: 0px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.btn-group .btn-rght {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.btn {
+  text-transform: uppercase;
+  margin: 35px auto;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,.29);
+  border-radius: 3px;
+  cursor: pointer;
+  background: #fff;
+  font-size: 16px;
+  width: 250px;
+  position: relative;
+}
+
+.btn:hover {
+  border-color: rgba(0,0,0,.5);
+  text-decoration: none;
+}
+
+.btn:disabled:hover {
+  border: 1px solid rgba(0,0,0,.29);
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: 0;
+  font-weight: 700;
+  border-width: 2px;
+}
+
+.center {
+  text-align: center;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav li {
+  height: 20px;
+}
+
+.nav li:first-child {
+  padding-left: 0;
+}
+
+.nav li:last-child {
+  float: right;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+ul {
+  padding-left: 0;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.nav-user {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.nav-avatar {
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  margin: 0 5px 0 10px;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 5px;
+}
+
+.login-box span,
+.user-select {
+  float: left;
+  margin: 0 auto 10px auto;
+  flex: 1 90%;
+}
+
+.user-select select {
+  float: right;
+  width: 160px;
+  height: 30px;
+  margin: 20px 0px 10px 10px;
+}
+
+.login-box button {
+  margin: 0 auto;
+}
+
+.question-list {
+  display: flex;
+  flex-flow: column wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: -8px;
+  padding: 0;
+}
+
+.question-list li {
+  margin: 0 8px -10px 8px;
+  padding: 0;
+}
+
+.question {
+  width: 280px;
+  padding: 10px;
+  display: flex;
+  flex-flow: wrap;
+  margin: 10px auto;
+  border: 1px solid #dad7d7;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.question img {
+  display: inline-block;
+  position: relative;
+  left: 10px;
+  margin: 0;
+}
+ 
+.question span{
+  width: 60%;
+  text-align: center;
+  margin: 20px;
+  display: block;
+  float: right;
+}
+
+.option {
+  padding: 0px;
+  width: 135px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.opt-offset {
+  margin-left: 10px;
+}
+
+.question form {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.question form button {
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+.option button, .option textarea {
+  box-sizing: border-box;
+  outline: 0;
+  width: 100%;
+  min-height: 72px;
+  border: 1px solid #dad7d7;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.option textarea {
+  resize: none;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+.option .stats, .option .hint {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.option button:hover {
+  text-decoration: none;
+  background: #ddd;
+}
+
+.option button.answered:hover {
+  text-decoration: none;
+  background: #fff;
+}
+
+button.question-option-selected:hover{
+  font-weight: bold;
+  background: #eee;
+}
+
+button.question-option-selected {
+  font-weight: bold;
+  background: #eee;
+}
+
+.user-list {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.user {
+  max-width: 300px;
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 5px;
+}
+
+.user img {
+  margin: 0;
+  float: left;
+}
+
+.user span{
+  margin: 10px 20px;
+  font-size: 18px;
+}
+
+.user-stats {
+  margin-top: 5px;
+  margin-left: 70px;
+}
+
+.user-stats p {
+  font-size: 12px;
+  margin: 0px;
+}
